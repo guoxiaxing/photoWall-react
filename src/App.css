@@ -1,0 +1,82 @@
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+body{
+	background-color: #ccc;
+	overflow: hidden;
+}
+/*.img{
+	position: absolute;
+}*/
+.img li{
+	background-color: white;
+	width: 340px;
+	height:416px;
+	position: absolute;
+	text-align: center;
+	box-shadow: 0 0 15px black;
+	transition: 0.7s;
+	transform: rotateY(0deg);
+	transform-style:preserve-3d;
+}
+.img li img{
+	margin-top: 93px;
+	width: 285px;
+	height: 192px;
+}
+/*.img{
+	transform: rotateY(0deg);
+	transform-style:preserve-3d;
+}*/
+/*.img .active{
+	transform:  rotateY(180deg);
+}*/
+.img .zm{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	transform:translateZ(1px);
+}
+.img .bm{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	transform:translateZ(-1px) rotateY(180deg);
+	text-align: center;
+	padding: 10px;
+}
+.img li .text{
+	margin-top: 20px;
+	color:#4d544d;
+}
+.point{
+	position: absolute;
+	bottom: 38px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 30;
+}
+.point li{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color:#007d77;
+	float: left;
+	margin-right: 20px;
+	cursor: pointer;
+	transform: scale(1);
+	transition: 0.7s;
+}
+.point .active{
+	transform: scale(1.5) rotateY(180deg);
+}
+.point .bactive{
+	transform: scale(1.5) rotateY(360deg);
+	background-color: yellow;
+}
